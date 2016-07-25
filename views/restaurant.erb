@@ -1,0 +1,12 @@
+<h2>
+  <%= @restaurant.name %>
+</h2>
+<p>
+ <%= "*" * @restaurant.rating.to_i %>
+</p>
+<p>
+  <%= @restaurant.address %>
+</p>
+<a href="/restaurants/<%= @restaurant.id %>/delete">DELETE ME</a><br>
+<a href="/restaurants/<%= @restaurant.id %>/edit">EDIT ME</a><br>
+<a href="/">BACK</a>

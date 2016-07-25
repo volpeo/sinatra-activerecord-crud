@@ -1,0 +1,15 @@
+<form action="/restaurants/<%= @restaurant.id %>" method="POST">
+  <p>
+    <label for="name">Name</label><br>
+    <input type="text" name="name" value="<%= @restaurant.name %>">
+  </p>
+  <p>
+    <label for="address">Address</label><br>
+    <input type="text" name="address" value="<%= @restaurant.address %>">
+  </p>
+  <p>
+    <label for="rating">Rating</label><br>
+    <input type="number" name="rating" value="<%= @restaurant.rating %>">
+  </p>
+  <input type="submit">
+</form>
